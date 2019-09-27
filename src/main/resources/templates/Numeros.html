@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+     <h1>Operacion</h1>
+     <select name="select">
+     <option value="value1">Suma</option>
+     <option value="value2">Resta</option>
+     <option value="value3">Multiplicacion</option>
+     <option value="value4">Division</option>
+     </select>
+     
+        <form action="/prueba/Numeros" method="Post">
+         <div>
+        <label>Numero:</label>
+        <input type="number" name="n1"  placeholder="Digite un numero"/>
+        <input type="number" name="n2"  placeholder="Digite un numero"/>
+        <button>Resultado</button>
+        </div>
+      </form> 
+      <!-- Mostrar el resultado -->
+      <h3 th:text="${resultadox}"></h3>
+</body>
+</html>
